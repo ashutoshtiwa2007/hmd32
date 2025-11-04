@@ -5,26 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS BOX MODEL</title>
     <style>
+        body,html, *{
+            margin: 0px;
+            padding: 0px;   
+            box-sizing: border-box;
+        }
+        #main{
+            width: 1000 px;
+            height:300 px;
+            background-color: lightgrey;
+            margin: 0px auto;
+        }
 
-        div{
+        .first{
             width: 300px;
-            height: 150px;
-            border: 10px solid black;
-            padding: 20px;
-            margin: 30px;
+            height: 300px;
+
             background-color: lightblue;
+        }
+        .first:nth-child(2){
+            margin: 0px auto
         }
 
     </style>
 </head>
 <body>
-    <div>
+    <div id="main">
+    <div class="first">
         <p>
             loram ipsum dolor sit amet consectetur adipisicing elit. Distinctio ex beatae, temporibus ab sit excepturi veniam
             consequatur expedita corrupti esse veritatis ipsam eius rerum aperiam, neque eveniet quos aut delectus.
         </p>
     </div>
-
+    <div class="first">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, reiciendis nesciunt quisquam enim iusto laudantium dolores at eaque voluptate accusamus repellendus, voluptates velit, aperiam doloribus. Assumenda molestias harum eaque optio?
+        </p>
+    </div>
+    <div class="first">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem. Quisquam neque, dicta cumque magnam laboriosam repellendus possimus sint harum, voluptates aspernatur earum! Quisquam, quidem. Quisquam neque, dicta cumque magnam laboriosam repellendus possimus sint harum, voluptates aspernatur earum!
+        </p>
+    </div>
+    </div>
     
 </body>
 </html>
