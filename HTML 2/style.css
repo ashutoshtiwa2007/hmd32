@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* background-color: aqua;
+    background-image: url("hello.jpg");
+    background-repeat: repeat-y;
+
+    background-size: cover; */
+    /* background: url("hello.jpg") no-repeat top left, url(image.png) repeat-x top 300px right #999;
+    background-size: auto, 1000px 1000px; */
+
+}
+html,*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    font-size: 20px;
+    font-family: arial;
+    font-weight: 700;
+    font-style: italic;
+    color: red;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-shadow: 3px 0px 10px #000;
+    display: inline-block;
+}
+#para{
+    color: chartreuse
+}
+img{
+    float:left;
+    margin-right: 20px;
+    border: 10px solid #999;
+    border-radius: 50%;
+}
