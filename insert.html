@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herman Walton - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            display: flex;
+            background: #00d9a0;
+            padding: 30px;
+        }
+
+        .profile-photo {
+            width: 200px;
+            height: 200px;
+            background-color: #c0c0c0;
+            margin-right: 20px;
+
+        }
+
+        .header-info {
+            flex-grow: 1;
+        }
+
+        .header-info h1 {
+            font-size: 42px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .header-info h2 {
+            font-size: 24px;
+            color: #666;
+            font-weight: normal;
+            margin-bottom: 30px;
+        }
+
+        .contact-info {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .main {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #f8f8f8;
+            padding: 30px 20px;
+            border-right: 1px solid #ddd;
+        }
+
+        .sidebar h3 {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .skill-bar {
+            margin-bottom: 20px;
+        }
+
+        .skill-bar p {
+            font-size: 14px;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .bar {
+            height: 8px;
+            background-color: #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .bar-fill {
+            height: 100%;
+            background-color: #333;
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 30px 40px;
+        }
+
+        .sec {
+            margin-bottom: 40px;
+        }
+
+        .sec h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .sec p {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .job-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .job-duration {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .sec ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .sec li {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="profile-photo"> <img src="hanumanji.jpeg" style="width:200px;height:200px;"></div>
+            <div class="header-info">
+                <h1>Ashutosh Tiwari</h1>
+                <h2>Student</h2>
+                <div class="contact-info">
+                    <p> ABES Engineering College, United States</p>
+                    <p>9756372857 ashutoshtiwariabes@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="sidebar">
+                <h3>Skills</h3>
+                <div class="skill-bar">
+                    <p>Advanced Communication Skills</p>
+                    <div class="bar">
+                        <div class="bar-fill" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <p>Office Technology Skills</p>
+                    <div class="bar">
+                        <div class="bar-fill" style="width: 75%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <p>Motivated Attitude</p>
+                    <div class="bar">
+                        <div class="bar-fill" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <p>Social Media Platforms</p>
+                    <div class="bar">
+                        <div class="bar-fill" style="width: 80%;"></div>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 30px;">Languages</h3>
+                <div class="skill-bar">
+                    <p>French</p>
+                    <div class="bar">
+                        <div class="bar-fill" style="width: 70%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <p>Dutch</p>
+                    <div class="bar">
+                        <div class="bar-fill" style="width: 60%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="sec">
+                    <h2>Profile</h2>
+                    <p>Hardworking Student seeking employment. Ready to utilize my skills and passion to further the mission of a company. Technologically adept, offering experience with many different social media platforms, office technology programs, and advanced computer skills. Bringing forth a positive attitude and the willingness and motivation to learn new programs.</p>
+                </div>
+
+                <div class="sec">
+                    <h2>Employment History</h2>
+                    <div class="job-title">Library assistent, ABES library, Ghaziabadk</div>
+                    <div class="job-duration">September 2015 — June 2018</div>
+                    <ul>
+                        <li>Greeted customers and assisted them with finding books.</li>
+                        <li>Offered literary suggestions based on the needs and desires of the customer.</li>
+                        <li>Followed directions from my Supervisor and managed projects with precision.</li>
+                        <li>Organized books and adhered to the policies and mission of the bookstore.</li>
+                    </ul>
+                </div>
+
+                <div class="sec">
+                    <h2>Education</h2>
+                    <ul>
+                        <li>10th from BBMS</li>
+                        <li>12th from CBSE</li>
+                        <li>B.tech from ABES</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
