@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        main {
+            width: 4010px;    
+            height: 2010px;
+            background-color: gray;
+            margin: 0 auto;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px;
+            border-radius: 25px;
+        }
+
+        header {
+            height: 250px;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;   
+            gap: 10px;
+        }
+
+        .box {
+            border-radius: 25px;
+            background-color: white;
+
+            width: 2000px;
+            height: 2000px;
+            }
+        .inside {
+            text-align: left;
+
+        }
+        
+
+        .box3 {
+            width: 100px;
+            height: 25px;
+            background-color: white;
+        }
+        .red {
+            width: 400px;
+            height: 85px;
+            border-radius: 25px;
+            background-color: red;
+            text-align: center  ;
+        }
+               .large-button {
+                width: 600px;
+                border-radius: 25px;
+                height: 200px;
+                font-size: 87px;
+                padding: 10px 20px;
+            }
+        .container {
+            max-width: 4500px;
+            height: 400px;
+            margin: 0 auto;
+            background-color: white;
+
+        }
+
+        .header {
+            display: flex;
+            background: black;
+            color: white;
+            padding: 30px;
+        }
+                
+        .header-info {
+
+            font-size : 150px;
+            text-align: center;
+        }
+                .logo {
+            width: 200px;
+            height: 200px;
+            background-color: #c0c0c0;
+            margin-right: 20px;
+
+        }
+     </style>
+</head>
+
+<body>
+        <div class="container">
+        <div class="header">
+            <div class="logo"> <img src="logo.jpeg" style="width:200px;height:200px;"></div>
+            <div class="header-info">
+
+                    AMAZON
+                </div>
+            </div>
+        </div>
+
+    <div class="box3"></div>
+
+    <main>
+        <div class="content">
+            <div class="box">
+                <img src="laptop.jpeg" style="width:100%; height:100%;">
+            </div>
+
+            <div class="box">
+                <div class="inside"><p style="font-size: 100px">HP 15, 13th Gen Intel Core i3-1315U (12GB DDR4, 512GB SSD) FHD, 
+                Anti-Glare, Micro-Edge, 15.6''/39.6cm, Win11, M365 Basic(1yr)* Office24, Silver, 
+                1.59kg, fd0573TU, FHD Camera w/Shutter Laptop</p>
+                </div>
+                <div class="inside">
+                    <p style="font-size: 50px"><a href="https://www.hp.com/in-en/shop/laptops/product-details/220Z6PA/15s-fd0573tu-laptop" target="_blank">More Details</a></p>
+                </div>
+                <div class="red"><p style="font-size: 50px">Limited time deal</p></div>
+                <div class="inside"><p style="font-size: 100px"><s>₹50,000</s>₹37,990</p></div>
+                <button  class="large-button" >ADD TO CART</button> <br> <br>
+                <button  class="large-button" >BUY NOW</button>
+
+
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
