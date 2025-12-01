@@ -4,13 +4,21 @@
     <title>Basic Layout</title>
     <style>
         body {
-            background: #2f7d32;
+            background: #e6e6e6;
             font-family: Arial;
         }
 
+        .main-box {
+            width: 900px;
+            margin: 30px auto;
+            background: #2f7d32;
+            padding: 20px;
+            border-radius: 10px;
+            
+        }
+
         .container {
-            width: 90%;
-            margin: 20px auto;
+            width: 100%;
             background: #2f7d32;
             padding: 10px;
         }
@@ -27,13 +35,11 @@
             margin-top: 10px;
         }
 
- 
         .right {
             float: right;
             width: 25%;
             margin-left: 10px;
         }
-
 
         .article-box {
             float: left;
@@ -47,32 +53,34 @@
 </head>
 <body>
 
-<div class="container">
+<div class="main-box"> 
 
-    <div class="box">Page Header</div>
-    <div class="box">Nav</div>
+    <div class="container">
 
+        <div class="box">Page Header</div>
+        <div class="box">Nav</div>
 
-    <div class="article-box box">
-        <p style="text-align:center;">Article</p>
+        <div class="article-box box">
+            <p style="text-align:center;">Article</p>
 
-        <div class="light">Article Header</div>
-        <div class="light" style="height:120px;">Main</div>
+            <div class="light">Article Header</div>
+            <div class="light" style="height:120px;">Main</div>
+        </div>
+
+        <div class="right">
+            <div class="box" style="height:80px;">Aside</div>
+            <div class="box" style="height:80px;">Aside</div>
+            <div class="box" style="height:150px; margin-top:10px;">Aside</div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="box">Section</div>
+        <div class="box">Footer</div>
+
     </div>
 
-
-    <div class="right">
-        <div class="box" style="height:80px;">Aside</div>
-        <div class="box" style="height:80px;">Aside</div>
-        <div class="box" style="height:150px; margin-top:10px;">Aside</div>
-    </div>
-
-    <div class="clearfix"></div>
-
-    <div class="box">Section</div>
-    <div class="box">Footer</div>
-
-</div>
+</div> 
 
 </body>
 </html>
