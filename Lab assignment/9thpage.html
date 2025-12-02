@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f0f0f0;
+        }
+        main{
+            background-color: #ccc;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin: auto;
+            
+        }
+         .container {
+            width: 100%;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        
+        .card {
+            width: 250px;
+            background: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.2);
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="main">
+    <div class="container">
+        <div class="card">
+            
+            <h3>Product 1</h3>
+            <p>High-quality item with great features.</p>
+            <p class="price">₹499</p>
+            
+
+        </div>
+        <div class="card">
+            <h3>Product 2</h3>
+            <p>Affordable and reliable choice.</p>
+            <p class="price">₹299</p>
+            </div>
+        <div class="card">
+            <h3>Product 3</h3>
+            <p>Trendy design with premium quality.</p>
+            <p class="price">₹999</p>
+
+        </div>
+        <div class="card">
+            <h3>Product 4</h3>
+            <p>Durable and reliable for everyday use.</p>
+            <p class="price">₹799</p>
+             
+        </div>
+    </div>
+    </div>
+    
+</body>
+</html>
