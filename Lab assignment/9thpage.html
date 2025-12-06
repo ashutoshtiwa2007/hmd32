@@ -36,6 +36,17 @@
             box-shadow: 0 0 8px rgba(0,0,0,0.2);
             margin: 10px;
         }
+        @media (max-width: 1024px) {
+        .grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+        }
+        }
+        @media (max-width: 600px) {
+        .grid {
+        grid-template-columns: 1fr; /* 1 column for mobile */
+        }
+        }
+
 
     </style>
 </head>
