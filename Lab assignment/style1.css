@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-</head>
-<style>
-     html, body {
+ html, body {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -113,43 +104,3 @@
         background-color: #ff9900;
         color: white;
 }
-</style>
-<body>
-        <div class="container">
-        <div class="header">
-            <div class="logo"> <img src="logo.jpeg" style="width:200px;height:200px;"></div>
-            <div class="header-info">
-
-                    AMAZON
-                </div>
-            </div>
-        </div>
-
-    <div class="box3"></div>
-
-    <main>
-        <div class="content">
-            <div class="box">
-                <img src="laptop.jpeg" style="width:100%; height:100%;">
-            </div>
-
-            <div class="box">
-                <div class="inside"><p style="font-size: 100px">HP 15, 13th Gen Intel Core i3-1315U (12GB DDR4, 512GB SSD) FHD, 
-                Anti-Glare, Micro-Edge, 15.6''/39.6cm, Win11, M365 Basic(1yr)* Office24, Silver, 
-                1.59kg, fd0573TU, FHD Camera w/Shutter Laptop</p>
-                </div>
-                <div class="inside">
-                    <p style="font-size: 50px"><a href="https://www.hp.com/in-en/shop/laptops/product-details/220Z6PA/15s-fd0573tu-laptop" target="_blank">More Details</a></p>
-                </div>
-                <div class="red"><p style="font-size: 50px">Limited time deal</p></div>
-                <div class="inside"><p style="font-size: 100px"><s>₹50,000</s>₹37,990</p></div>
-                <button  class="large-button" ><div class="button1">ADD TO CART</div></button> <br> <br>
-                <button  class="large-button" ><div class="button1">BUY NOW</div></button>
-
-
-            </div>
-        </div>
-    </main>
-
-</body>
-</html>

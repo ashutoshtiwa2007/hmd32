@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam - Sign In</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #1b2838 0%, #2a475e 100%);
+            color: #c7d5e0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .login-container {
+            background: #1b2838;
+            border-radius: 5px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .login-logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+        }
+
+        .login-title {
+            color: #c7d5e0;
+            font-size: 20px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            color: #c7d5e0;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 3px;
+            background: #32485e;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            background: #417a9b;
+        }
+
+        .form-group input::placeholder {
+            color: #8f98a0;
+        }
+
+        .remember-me {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .remember-me input[type="checkbox"] {
+            width: auto;
+            margin-right: 8px;
+            cursor: pointer;
+        }
+
+        .remember-me label {
+            color: #c7d5e0;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .btn-login-submit {
+            width: 100%;
+            padding: 12px;
+            background: #5c7e10;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn-login-submit:hover {
+            background: #6d9a18;
+        }
+
+        .links {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .links a {
+            color: #66c0f4;
+            font-size: 13px;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        .divider {
+            margin: 30px 0;
+            text-align: center;
+            color: #8f98a0;
+            font-size: 13px;
+            position: relative;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 40%;
+            height: 1px;
+            background: #4b6b8c;
+        }
+
+        .divider::before {
+            left: 0;
+        }
+
+        .divider::after {
+            right: 0;
+        }
+
+        .social-login {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .social-btn {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #4b6b8c;
+            border-radius: 3px;
+            background: transparent;
+            color: #c7d5e0;
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .social-btn:hover {
+            background: #2a475e;
+            border-color: #66c0f4;
+        }
+
+        .back-link {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .back-link a {
+            color: #8f98a0;
+            font-size: 13px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .back-link a:hover {
+            color: #fff;
+        }
+
+        @media (max-width: 480px) {
+            .login-container {
+                padding: 30px 20px;
+            }
+
+            .login-logo {
+                font-size: 28px;
+            }
+
+            .login-title {
+                font-size: 18px;
+            }
+
+            .form-group input {
+                padding: 10px 12px;
+            }
+
+            .btn-login-submit {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-logo">STEAM</div>
+        <div class="login-title">Sign In</div>
+        
+        <form onsubmit="return false;">
+            <div class="form-group">
+                <label for="username">Username or Email</label>
+                <input type="text" id="username" placeholder="Enter your username">
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+            </div>
+            
+            <div class="remember-me">
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember me</label>
+            </div>
+            
+            <button type="submit" class="btn-login-submit">Sign In</button>
+        </form>
+        
+        <div class="links">
+            <a href="#">Forgot password?</a>
+            <a href="#">Create account</a>
+        </div>
+        
+        <div class="divider">or sign in with</div>
+        
+        <div class="social-login">
+            <button class="social-btn">Google</button>
+            <button class="social-btn">Facebook</button>
+        </div>
+        
+        <div class="back-link">
+            <a href="#">← Back to Store</a>
+        </div>
+    </div>
+</body>
+</html>
